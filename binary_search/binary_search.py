@@ -1,20 +1,6 @@
 from typing import List
 
 
-def binary_search(nums: List[int], target: int):
-    """二分搜索"""
-    left, right = 0, len(nums) - 1
-    while left <= right:
-        mid = (left + right) // 2
-        if nums[mid] == target:
-            return mid
-        elif nums[mid] < target:
-            left = mid + 1  # 这个"1"必须有，否则当nums[i]=target，可能死循环
-        else:
-            right = mid - 1  # 这个"1"必须有，否则当target not in nums,可能死循环
-    return None  # 未找到
-
-print(binary_search([1,2,3,5], 4))
 """ 
 mid ,left, right的关系:
 mid向下取整时:
@@ -27,3 +13,21 @@ mid向下取整时:
 左右指针确定能收敛到target，即不错过吗?
 能
 """
+
+
+def binary_search(nums: List[int], target: int):
+    """二分搜索"""
+    left, right = 0, len(nums) - 1
+    while left <= right:  # 当left=mid=right的结果可能不满足时需要
+        mid = (left + right) // 2
+        if nums[mid] == target:
+            return mid
+        elif nums[mid] < target:
+            left = mid + 1  # 这个"1"必须有，否则当nums[i]=target，可能死循环
+        else:
+            right = mid - 1  # 这个"1"必须有，否则当target not in nums,可能死循环
+    return None  # 未找到
+
+
+print(binary_search([1, 2, 3, 5], 4))
+

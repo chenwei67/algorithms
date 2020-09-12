@@ -15,7 +15,7 @@ mid向下取整时:
 """
 
 
-def binary_search(nums: List[int], target: int):
+def binary_search_v1(nums: List[int], target: int):
     """二分搜索"""
     left, right = 0, len(nums) - 1
     while left <= right:  # 当left=mid=right的结果可能不满足时需要
@@ -29,5 +29,28 @@ def binary_search(nums: List[int], target: int):
     return None  # 未找到
 
 
-print(binary_search([1, 2, 3, 5], 4))
+def binary_search_wrong1(nums: List[int], target: int):
+    left, right = 0, len(nums) - 1
 
+    """当 nums[mid]等于target，死循环"""
+    while left < right:
+        mid = (left + right) // 2
+        if nums[mid] < target:
+            left = mid + 1
+        elif nums[mid] > target:
+            right = mid - 1
+
+
+def binary_search_v2(nums: List[int], target: int):
+    if not nums:
+        return None
+
+    left, right = 0, len(nums) - 1
+    while left < right:
+        mid = (left + right) // 2
+        if nums[mid] < target:
+            left = mid + 1
+        elif nums[mid] >= target:
+            right = mid  # right指向大于等于target的值，并且是"归档"的
+    # 结束时,left==mid==right
+    return nums[left] == target

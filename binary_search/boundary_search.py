@@ -40,7 +40,7 @@ def right_boundary_binary_search_wrong1(nums: List[int], target: int) -> bool:
             right = mid - 1
 
 
-def right_boundary_binary_restrict(nums: List[int], target: int) -> bool:
+def right_boundary_binary_wrong2(nums: List[int], target: int) -> bool:
     """
     这种方式有局限性，只能用于无重复元素。[0, 1, 1, 1]就会失效
     """

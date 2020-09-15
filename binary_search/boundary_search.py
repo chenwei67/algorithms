@@ -1,18 +1,5 @@
 from typing import List
 
-"""
-总结：
-    0.while循环不需要等号
-    1.nums[mid]等于target时，根据是否需要排除mid，分配到"1"或另一个判断句
-    2.mid取整方式取决于"1"在小于还是大于的判断句
-    3.值与target为不等关系时，值不排除不能有"1"，值排除可以无"1"
-关键：
-    "1"与"nums[mid]==target"，决定了二分法怎么写
-步骤：
-    0.确定无"1"在大于还是小于判断句,同时可确定取整方式
-    1.确定nums[mid]==target在哪个判断句
-"""
-
 
 def left_boundary_binary_search(nums: List[int], target: int) -> bool:
     if not nums:

@@ -50,7 +50,7 @@ def binary_search_v2(nums: List[int], target: int):
         mid = (left + right) // 2
         if nums[mid] < target:
             left = mid + 1
-        elif nums[mid] >= target:
+        else:
             right = mid  # right指向大于等于target的值，并且是"归档"的
     # 结束时,left==mid==right
     return nums[left] == target

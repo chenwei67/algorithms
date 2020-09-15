@@ -9,9 +9,8 @@ from typing import List
 关键：
     "1"与"nums[mid]==target"，决定了二分法怎么写
 步骤：
-    0.确定无"1"在大于还是小于判断句
-    1.确定取整方式
-    2.确定nums[mid]==target在哪个判断句
+    0.确定无"1"在大于还是小于判断句,同时可确定取整方式
+    1.确定nums[mid]==target在哪个判断句
 """
 
 

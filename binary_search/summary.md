@@ -33,19 +33,19 @@
 边界值可以是最后一个小于target值，第一个大于target值,等于的情况可以转为对立的边界  
 
 ## 算法解析
-1. 初始化： 左边界 i = 0i=0 ，右边界 j = len(nums) - 1j=len(nums)−1 。
+1. 初始化： 左边界 i = 0 ，右边界 j = len(nums) - 1。
 
-2. 循环二分： 当闭区间 [i, j][i,j] 无元素时跳出；
+2. 循环二分： 当闭区间 [i, j] 无元素时跳出；
 
-3. 计算中点 m = (i + j) / 2m=(i+j)/2 （向下取整）；
+3. 计算中点 m = (i + j) / 2 （向下取整）；
 
-4. 若 nums[m] < targetnums[m]<target ，则 targettarget 在闭区间 [m + 1, j][m+1,j] 中，因此执行 i = m + 1i=m+1；
+4. 若 nums[m]  < target ，则 target 在闭区间 [m + 1, j] 中，因此执行 i = m + 1；
 
-5. 若 nums[m] > targetnums[m]>target ，则 targettarget 在闭区间 [i, m - 1][i,m−1] 中，因此执行 j = m - 1j=m−1；
+5. 若 nums[m] > target ，则 target 在闭区间 [i, m - 1] 中，因此执行 j = m - 1；
 
-6. 若 nums[m] = targetnums[m]=target ，则右边界 rightright 在闭区间 [m+1, j][m+1,j] 中；左边界 leftleft 在闭区间 [i, m-1][i,m−1] 中。因此分为以下两种情况：  
-若查找 右边界 rightright ，则执行 i = m + 1i=m+1 ；（跳出时 ii 指向右边界）  
-若查找 左边界 leftleft ，则执行 j = m - 1j=m−1 ；（跳出时 jj 指向左边界）  
+6. 若 nums[m] = target ，则右边界 right 在闭区间 [m+1, j] 中；左边界 left 在闭区间 [i, m-1]中。因此分为以下两种情况：  
+若查找 右边界 right ，则执行 i = m + 1；（跳出时 i 指向右边界）  
+若查找 左边界 left ，则执行 j = m - 1；（跳出时 j 指向左边界）  
 
 
 链接：https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/solution/mian-shi-ti-53-i-zai-pai-xu-shu-zu-zhong-cha-zha-5/

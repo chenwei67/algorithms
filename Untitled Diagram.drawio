@@ -1,26 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2022-07-11T02:50:45.614Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="dg3sBc-HplNBL5P751Zh" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-11T03:37:56.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="Kj-kU-47SA6PcmiUnj7x" version="20.0.4" type="github">
   <diagram id="HPPAbBvzvJd9_GJPXvPf" name="Page-1">
     <mxGraphModel dx="1036" dy="457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NEL7sofstE1XWTygLHOm-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="445" width="780" height="140" as="geometry" />
+        </mxCell>
         <mxCell id="NEL7sofstE1XWTygLHOm-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="30" width="780" height="150" as="geometry" />
+          <mxGeometry x="20" y="120" width="780" height="255" as="geometry" />
         </mxCell>
         <mxCell id="NEL7sofstE1XWTygLHOm-1" value="主设备替补" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="70" width="120" height="60" as="geometry" />
+          <mxGeometry x="60" y="265" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NEL7sofstE1XWTygLHOm-2" value="子集群替补" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="70" width="120" height="60" as="geometry" />
+          <mxGeometry x="630" y="265" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NEL7sofstE1XWTygLHOm-3" value="增量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="70" width="120" height="60" as="geometry" />
+          <mxGeometry x="350" y="265" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NEL7sofstE1XWTygLHOm-4" value="主设备" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="260" width="120" height="60" as="geometry" />
+          <mxGeometry x="180" y="485" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NEL7sofstE1XWTygLHOm-5" value="子集群" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="510" y="260" width="120" height="60" as="geometry" />
+          <mxGeometry x="510" y="485" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-7" value="license_device_auto_id" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEL7sofstE1XWTygLHOm-1" target="NEL7sofstE1XWTygLHOm-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="455" as="sourcePoint" />
+            <mxPoint x="150" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-10" value="主设备备份" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-11" value="子集群备份" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEL7sofstE1XWTygLHOm-3" target="NEL7sofstE1XWTygLHOm-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="320" as="sourcePoint" />
+            <mxPoint x="300" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-13" value="l" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NEL7sofstE1XWTygLHOm-12">
+          <mxGeometry x="-0.2494" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-14" value="license_devcie_substitutue_auto_id" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NEL7sofstE1XWTygLHOm-12">
+          <mxGeometry x="-0.2847" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-15" value="cluster_license_substitutue_auto_id" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEL7sofstE1XWTygLHOm-3" target="NEL7sofstE1XWTygLHOm-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="330" as="sourcePoint" />
+            <mxPoint x="530" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NEL7sofstE1XWTygLHOm-16" value="cluster_license_auto_id" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEL7sofstE1XWTygLHOm-2" target="NEL7sofstE1XWTygLHOm-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="400" as="sourcePoint" />
+            <mxPoint x="710" y="350" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
